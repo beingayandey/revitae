@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 36" width="160" height="36" fill="none">
+  <rect width="36" height="36" rx="8" fill="#18181b"/>
+  <path d="M12 24L18 12L24 24M14 20H22" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="48" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#18181b" letter-spacing="-0.5">LOGO</text>
+</svg>
