@@ -1489,20 +1489,38 @@
     height: 2rem;
   }
 
+  /* ========================================
+     HORMONES PRODUCT SECTION (<= 900px)
+     ======================================== */
   .parent-hormones-section {
+    display: flex;
     flex-direction: column;
-    gap: 3.6rem;
-  }
-
-  .hormones-left,
-  .hormones-right {
-    width: 100%;
-    max-width: 100%;
+    gap: 4rem;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .hormones-left {
-    max-width: 52rem;
+    position: static;
+    top: auto;
+    align-self: center;
+    width: 100%;
+    max-width: 54rem;
     margin: 0 auto;
+    flex: none;
+  }
+
+  .hormones-right {
+    position: static;
+    width: 100%;
+    max-width: 54rem;
+    margin: 0 auto;
+    flex: none;
+  }
+
+  .hormones-slider {
+    width: 100%;
+    margin-bottom: 2.4rem;
   }
 
   .hormones-slider .swiper-button-prev {
@@ -1511,6 +1529,25 @@
 
   .hormones-slider .swiper-button-next {
     right: 1rem;
+  }
+
+  .parent-product {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .product-col {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .product-box {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 
   /* ========================================
