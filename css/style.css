@@ -1629,6 +1629,7 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 1.2rem;
+  flex-wrap: wrap;
 }
 
 .option-title-wrap {
@@ -1947,7 +1948,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.2rem 0;
+  padding: 2.2rem 0.6rem 2.2rem 0;
   background: transparent;
   border: none;
   outline: none;

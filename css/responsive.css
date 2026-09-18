@@ -1505,6 +1505,14 @@
     margin: 0 auto;
   }
 
+  .hormones-slider .swiper-button-prev {
+    left: 1rem;
+  }
+
+  .hormones-slider .swiper-button-next {
+    right: 1rem;
+  }
+
   /* ========================================
      REVITAE COMPARISON SECTION (How Revitae Stands Alone)
      ======================================== */
@@ -2797,8 +2805,18 @@
     padding: 1.2rem 1.4rem;
   }
 
+  .purchase-option-card .option-header {
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
   .option-title {
     font-size: 1.45rem;
+  }
+
+  .option-price-wrap {
+    gap: 0.6rem;
+    margin-left: auto;
   }
 
   .current-price {
@@ -2825,8 +2843,9 @@
     font-size: 1.1rem;
   }
 
-  .product-accordion-wrapper .accordion-header {
-    padding: 1.6rem 0;
+  .product-accordion-wrapper .accordion-header,
+  .faq-accordion-wrapper .accordion-header {
+    padding: 1.6rem 0.6rem 1.6rem 0;
   }
 
   .product-accordion-wrapper .accordion-title {
