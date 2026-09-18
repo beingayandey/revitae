@@ -146,42 +146,303 @@
 }
 
 /* ========================================
-   3. TABLET LANDSCAPE (max-width: 1024px)
+   2B. LARGE TABLET (max-width: 1100px)
    ======================================== */
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .container {
-    max-width: min(94rem, calc(100vw - 4.8rem));
+    max-width: min(104rem, calc(100vw - 4.8rem));
   }
 
   .common-padding {
     padding: 6.4rem 0;
   }
 
+  /* Feature Advertise */
+  .feature-advertise-content {
+    gap: clamp(2.8rem, 3.6vw, 4.8rem);
+    justify-content: center;
+  }
+
+  .feature-advertise-content li::before {
+    left: calc(clamp(2.8rem, 3.6vw, 4.8rem) / -2);
+    transform: translate(-50%, -50%);
+  }
+
+  /* Banner Layout & Elements */
   .banner {
-    padding: 5.6rem 0;
+    min-height: auto;
+    padding: 6rem 0;
+  }
+
+  .banner-content {
+    max-width: 54rem;
   }
 
   .banner-content h1 {
-    font-size: 4rem;
+    font-size: 4.2rem;
+    line-height: 1.15;
     margin-bottom: 2rem;
   }
 
   .banner-content p {
     font-size: 1.6rem;
-    max-width: 440px;
+    max-width: 44rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .banner-review {
+    max-width: 48rem;
+  }
+
+  .banner-absolute {
+    left: auto;
+    right: clamp(2rem, 3.5vw, 5rem);
+    transform: none;
+    bottom: 3.6rem;
+  }
+
+  .banner-absolute img {
+    width: clamp(21rem, 23vw, 25rem);
+    max-width: 25rem;
+    height: auto;
+  }
+
+  /* Hormones 2-Column Responsive Flow */
+  .parent-hormones-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3.2rem;
+    align-items: flex-start;
+  }
+
+  .hormones-left {
+    flex: 1 1 48%;
+    max-width: 52rem;
+    min-width: 0;
+    position: sticky;
+    top: 9rem;
+    align-self: flex-start;
+  }
+
+  .hormones-right {
+    flex: 1 1 48%;
+    max-width: 48rem;
+    min-width: 0;
+    margin-left: 0;
+  }
+
+  .parent-product {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: space-between;
+  }
+
+  .product-box {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .product-details {
+    padding: 3rem 0.8rem 1.6rem;
+  }
+
+  .product-details .product-qty {
+    font-size: 1.6rem;
+  }
+
+  .product-details .product-duration {
+    font-size: 1.25rem;
+  }
+
+  .product-details .product-price {
+    font-size: 1.3rem;
+  }
+
+  .tag {
+    font-size: 1.15rem;
+    padding: 2.5px 7px;
+  }
+
+  .offer {
+    font-size: 1.15rem;
+    min-width: 68px;
+    padding: 2.5px 5px;
+  }
+
+  /* Balance Section */
+  .balance-row {
+    gap: 1.8rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .balance-content h4 {
+    font-size: 2.6rem;
+  }
+
+  .balance-content p {
+    font-size: 1.5rem;
+  }
+
+  /* Commitment Section */
+  .commitment-cta-btn {
+    margin-bottom: 6rem;
+  }
+
+  /* Why Created & FAQ */
+  .why-created-grid {
+    gap: 4.8rem;
+  }
+
+  .faq-grid {
+    gap: 3.6rem;
+  }
+}
+
+/* ========================================
+   3. TABLET & 980px TRANSITION (max-width: 1024px)
+   ======================================== */
+@media (max-width: 1024px) {
+  .container {
+    max-width: min(94rem, calc(100vw - 4rem));
+  }
+
+  .common-padding {
+    padding: 5.6rem 0;
+  }
+
+  /* Header & Navigation */
+  .custom-navbar {
+    padding: 1.2rem 0;
+  }
+
+  .nav-brand img {
+    max-height: 3.2rem;
+  }
+
+  .nav-menu-wrapper {
+    margin-left: clamp(1.6rem, 2.4vw, 2.8rem);
+    gap: 1.6rem;
+  }
+
+  .nav-links {
+    gap: clamp(1.4rem, 1.8vw, 2rem);
+  }
+
+  .nav-links .nav-link {
+    font-size: 1.5rem;
+  }
+
+  .nav-actions {
+    gap: clamp(1.4rem, 1.8vw, 2rem);
+  }
+
+  /* Feature Advertise */
+  .feature-advertise-content {
+    gap: 3.2rem;
+    justify-content: center;
+  }
+
+  .feature-advertise-content li {
+    font-size: 1.45rem;
+    gap: 6px;
+  }
+
+  .feature-advertise-content li::before {
+    left: -1.6rem;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Hero Banner */
+  .banner {
+    min-height: auto;
+    padding: 5.6rem 0;
+  }
+
+  .banner-content {
+    max-width: 50rem;
+  }
+
+  .banner-content h1 {
+    font-size: 3.8rem;
+    line-height: 1.15;
+    margin-bottom: 1.8rem;
+    max-width: 46rem;
+  }
+
+  .banner-content p {
+    font-size: 1.55rem;
+    line-height: 1.5;
+    max-width: 42rem;
+    margin-bottom: 2rem;
+  }
+
+  .banner-ul {
+    margin-bottom: 2.8rem;
+    gap: 1rem;
+  }
+
+  .banner-ul li {
+    font-size: 1.5rem;
   }
 
   .banner-order-btn .btn-primary {
-    min-width: 38rem;
-    padding: 1.6rem 2.8rem;
+    min-width: auto;
+    width: 100%;
+    max-width: 38rem;
+    padding: 1.5rem 2.8rem;
+    font-size: 1.5rem;
+    margin-bottom: 2.8rem;
   }
 
+  .banner-review {
+    max-width: 45rem;
+    padding: 1.2rem 2rem 1.2rem 1.4rem;
+    gap: 1.4rem;
+  }
+
+  .banner-review .br-left {
+    width: 6.4rem;
+    height: 6.4rem;
+    flex-shrink: 0;
+  }
+
+  .banner-review p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .banner-absolute {
+    left: auto;
+    right: 2rem;
+    transform: none;
+    bottom: 3rem;
+  }
+
+  .banner-absolute img {
+    width: 21rem;
+    max-width: 21rem;
+    height: auto;
+  }
+
+  /* Marquee Ticker */
+  .banner-after-slider,
+  .banner-after-slider.swiper {
+    padding: 2.2rem 0;
+  }
+
+  .banner-after-slider ul li h2 {
+    font-size: 2.2rem;
+  }
+
+  /* Section Headings */
   .balance-section .section-heading-content,
   .standard-section .section-heading-content,
   .commitment .section-heading-content,
   .revitae-section .section-heading-content,
   .results-section .section-heading-content {
-    margin-bottom: 4.8rem;
+    margin-bottom: 4rem;
   }
 
   .balance-section .section-heading-content h2,
@@ -193,8 +454,8 @@
   .why-created-content h2,
   .faq-content h2,
   .reclaim-section h2 {
-    font-size: 3.6rem;
-    margin-bottom: 1.6rem;
+    font-size: 3.4rem;
+    margin-bottom: 1.4rem;
   }
 
   .balance-section .section-heading-content p,
@@ -203,81 +464,357 @@
   .revitae-section .section-heading-content p,
   .results-section .section-heading-content p,
   .faq-content p {
+    font-size: 1.55rem;
+  }
+
+  /* Balance 3 Steps */
+  .balance-row {
+    gap: 1.6rem;
+    margin-bottom: 4rem;
+  }
+
+  .balance-col .balance-box {
+    max-width: 100%;
+  }
+
+  .balance-img {
+    margin-bottom: 2.8rem;
+  }
+
+  .balance-step {
+    width: 4.2rem;
+    height: 4.2rem;
+    font-size: 2.6rem;
+  }
+
+  .balance-content h4 {
+    font-size: 2.2rem;
+    line-height: 1.25;
+    margin-bottom: 0.8rem;
+  }
+
+  .balance-content p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  .balance-cta-section .btn-primary {
+    min-width: auto;
+    width: 100%;
+    max-width: 38rem;
+    padding: 1.5rem 2.8rem;
+    font-size: 1.5rem;
+  }
+
+  /* Standard Section */
+  .standard-content {
+    max-width: 54rem;
+  }
+
+  .standard-img {
+    width: 8rem;
+    min-width: 8rem;
+    height: 8rem;
+  }
+
+  .standard-img img {
+    max-width: 4.8rem;
+  }
+
+  .standard-text h3,
+  .standard-text h4 {
+    font-size: 2rem;
+  }
+
+  .standard-text p {
+    font-size: 1.45rem;
+  }
+
+  /* Commitment Section */
+  .commitment-row {
+    gap: 1.6rem;
+    margin-bottom: 4rem;
+  }
+
+  .commitment-col .commitment-box {
+    max-width: 100%;
+  }
+
+  .commitment-img {
+    width: 8rem;
+    min-width: 8rem;
+    height: 8rem;
+  }
+
+  .commitment-img img {
+    max-width: 4.6rem;
+  }
+
+  .commitment-content h3 {
+    font-size: 2.1rem;
+  }
+
+  .commitment-content p {
+    font-size: 1.45rem;
+  }
+
+  .commitment-cta-btn {
+    margin-bottom: 4.8rem;
+  }
+
+  .commitment-cta-btn .btn-primary {
+    min-width: auto;
+    width: 100%;
+    max-width: 38rem;
+    padding: 1.5rem 2.8rem;
+    font-size: 1.5rem;
+  }
+
+  .video-card {
+    width: 22rem;
+    border-radius: 2rem;
+  }
+
+  /* Hormones Product Section (ZERO OVERFLOW 2-COLUMN) */
+  .parent-hormones-section {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .hormones-left {
+    flex: 1 1 46%;
+    max-width: 46rem;
+    min-width: 0;
+    position: sticky;
+    top: 9rem;
+    align-self: flex-start;
+  }
+
+  .hormones-right {
+    flex: 1 1 50%;
+    max-width: 46rem;
+    min-width: 0;
+    margin-left: 0;
+  }
+
+  .parent-product {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: space-between;
+  }
+
+  .product-box {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .product-details {
+    padding: 2.8rem 0.6rem 1.4rem;
+  }
+
+  .product-details .product-qty {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+  }
+
+  .product-details .product-duration {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+  }
+
+  .product-details .product-price {
+    font-size: 1.25rem;
+  }
+
+  .tag {
+    font-size: 1.1rem;
+    padding: 2px 6px;
+  }
+
+  .offer {
+    font-size: 1.1rem;
+    min-width: 65px;
+    padding: 2px 4px;
+  }
+
+  .purchase-options-wrapper {
+    gap: 1.4rem;
+    margin-top: 2rem;
+  }
+
+  .purchase-option-card {
+    padding: 1.4rem 1.6rem;
+  }
+
+  .purchase-option-card.subscribe-option {
+    padding: 1.6rem 1.8rem;
+  }
+
+  .custom-dropdown-trigger {
+    padding: 1.2rem 1.4rem;
+    font-size: 1.4rem;
+  }
+
+  .subscribe-benefits-list {
+    font-size: 1.35rem;
+  }
+
+  .add-cart-btn .btn-primary {
+    width: 100%;
+    padding: 1.6rem 2.4rem;
     font-size: 1.6rem;
   }
 
-  .parent-hormones-section {
-    gap: 3rem;
+  .product-features-row {
+    gap: 1rem;
   }
 
+  .standard-img.feature-icon-box {
+    width: 7.6rem;
+    height: 7.6rem;
+    min-width: 7.6rem;
+  }
+
+  .standard-img.feature-icon-box img {
+    max-width: 4.2rem;
+  }
+
+  .feature-label {
+    font-size: 1.3rem;
+  }
+
+  /* Comparison Section */
   .revitae-comparison-wrapper {
     max-width: 100%;
   }
 
   .comparison-labels {
-    flex: 0 0 190px;
+    flex: 0 0 160px;
   }
 
   .comparison-label-item {
-    font-size: 1.7rem;
-    padding-right: 1.6rem;
+    font-size: 1.55rem;
+    padding-right: 1.2rem;
   }
 
   .comparison-row {
-    padding: 0 1.6rem;
+    padding: 0 1.4rem;
     gap: 1rem;
   }
 
   .row-text {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
   }
 
+  /* Results Section */
   .results-section {
-    padding: 6rem 0;
+    padding: 5.6rem 0;
   }
 
   .results-section .banner-review {
-    flex: 0 0 440px;
-    max-width: 440px;
-    padding: 1rem 1.6rem 1rem 1.2rem;
+    flex: 0 0 400px;
+    max-width: 400px;
+    padding: 1rem 1.4rem 1rem 1.2rem;
     gap: 1.2rem;
   }
 
   .results-section .banner-review .br-left {
-    width: 72px;
-    height: 72px;
+    width: 6.4rem;
+    height: 6.4rem;
   }
 
   .results-section .banner-review p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 
-  .faq-grid {
+  /* Why Created Section */
+  .why-created-grid {
     gap: 4rem;
   }
 
-  .faq-content {
-    flex: 0 0 320px;
+  .why-created-content {
+    max-width: 48rem;
   }
 
+  .why-created-content h2 {
+    font-size: 3.4rem;
+  }
+
+  .why-subtitle {
+    font-size: 1.7rem;
+  }
+
+  .why-desc {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .why-created-section .btn-primary {
+    min-width: auto;
+    width: 100%;
+    max-width: 38rem;
+    padding: 1.5rem 2.8rem;
+    font-size: 1.5rem;
+  }
+
+  /* FAQ Section */
+  .faq-grid {
+    gap: 3.2rem;
+  }
+
+  .faq-content {
+    flex: 0 0 280px;
+  }
+
+  /* Reclaim Section */
+  .reclaim-section h2 {
+    font-size: 3.4rem;
+  }
+
+  .reclaim-section .btn-primary {
+    min-width: auto;
+    width: 100%;
+    max-width: 38rem;
+    padding: 1.5rem 2.8rem;
+    font-size: 1.5rem;
+  }
+
+  .reclaim-section .banner-review {
+    max-width: 52rem;
+  }
+
+  /* Footer */
   .site-footer {
-    padding: 4.8rem 0 3.2rem;
+    padding: 4.4rem 0 2.8rem;
   }
 
   .footer-newsletter {
-    gap: 2.4rem;
+    gap: 2rem;
   }
 
   .newsletter-title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .newsletter-input-group {
-    width: 38rem;
+    width: 34rem;
   }
 
   .footer-nav-links ul {
-    gap: 2.4rem;
+    gap: 2rem;
+  }
+
+  .footer-bottom-row {
+    gap: 1.6rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-legal-links ul {
+    gap: 1.8rem;
   }
 }
 
@@ -625,7 +1162,6 @@
     bottom: 0;
     transform: none;
     width: 100%;
-    max-width: 36rem;
     height: 48rem;
     margin: -1.6rem auto 0;
     background-image: url("../assets/images/banner-img.png");

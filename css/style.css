@@ -1315,13 +1315,15 @@ header {
 }
 
 .hormones-left {
-  /* width: 50%; */
+  flex: 1 1 50%;
   max-width: 60.8rem;
+  min-width: 0;
 }
 
 .hormones-right {
-  width: 50%;
+  flex: 1 1 50%;
   max-width: 50.4rem;
+  min-width: 0;
   margin-left: auto;
 }
 
@@ -1533,8 +1535,9 @@ header {
   color: var(--color-secondary);
 }
 .product-box {
+  width: 100%;
   max-width: 157px;
-  min-width: 157px;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
